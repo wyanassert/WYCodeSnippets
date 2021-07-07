@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cgi</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSString *)getModule
+{
+    return @"";
+}
+
+- (NSString *)getMethod
+{
+    return @"";
+}
+
+- (void)addParam:(NSMutableDictionary *)paramDic
+{
+    //参数见wiki &lt;#url#&gt;
+    [paramDic setObject:@(self.&lt;#property#&gt;) forKey:@"&lt;#key#&gt;"];
+}
+
+- (void)parseResponseData:(NSDictionary *)data
+{
+    if ([self isSuccessfulReturnCode])
+    {
+        NSDictionary *subDic = [JsonHelper getDicFromDictionary:data forKey:@"data" withDefault:nil];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F5790353-3A7B-4A7E-9EA4-DF49EEDD8078</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Cgi Create</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

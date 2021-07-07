@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>signal</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>RACSubject *signal = [RACSubject subject];
+
+// TODO:wyanwan 补齐 CGI
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    if ((arc4random() % 4) != 0)
+    {
+        [signal sendNext:self];
+        [signal sendCompleted];
+    }
+    else
+    {
+        NSError *error = [NSError errorWithDomain:@"&lt;#Domain#&gt;" code:0 userInfo:nil];
+        [signal sendError:error];
+    }
+});
+
+return signal;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1CC7FA5A-8006-4057-8B9E-6636DAB5D1AD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>RAC Signal</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
