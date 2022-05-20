@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>objcget</string>
+	<string>pl</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>return objc_getAssociatedObject(self, @selector(&lt;#property#&gt;));</string>
+	<string>@property (nonatomic, strong) UILabel *&lt;#labelName#&gt;Label;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>50C72287-82E4-410E-8BCB-E6B3FF75C525</string>
+	<string>8A453ECC-7D8A-497B-AFF8-197E170613B4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objc get</string>
+	<string>property Label</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

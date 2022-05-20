@@ -3,21 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>objcget</string>
+	<string>modeljce</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>return objc_getAssociatedObject(self, @selector(&lt;#property#&gt;));</string>
+	<string>@class &lt;#JceQM__Rsp#&gt;;
+
++ (instancetype)modelWithJCERsp:(&lt;#JceQM__Rsp#&gt; *)rsp;
+
+#import "&lt;#JceQM__Rsp#&gt;.h"
+
++ (instancetype)modelWithJCERsp:(&lt;#JceQM__Rsp#&gt; *)rsp
+{
+    &lt;#ClassName#&gt; *model = [[&lt;#ClassName#&gt; alloc] init];
+    &lt;#Code#&gt;;
+    return model;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>50C72287-82E4-410E-8BCB-E6B3FF75C525</string>
+	<string>301C9639-B59E-44D9-B76E-B182BE438CF5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objc get</string>
+	<string>model JCE Rsp</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

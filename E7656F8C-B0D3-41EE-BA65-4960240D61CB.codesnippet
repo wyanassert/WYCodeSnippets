@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jce</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import "&lt;#JceQM__Req#&gt;.h"
+#import "&lt;#JceQM__Rsp#&gt;.h"
+
+- (instancetype)init
+{
+    self = [super initWithModule:@"&lt;#Module#&gt;"
+                          method:@"&lt;#Method#&gt;"
+                             req:({
+        &lt;#JceQM__Req#&gt; *req = [&lt;#JceQM__Req#&gt; object];
+        &lt;#Code#&gt;;
+        req;
+                                    })
+                             rsp:[&lt;#JceQM__Rsp#&gt; object]];
+    
+    if (self)
+    {
+        &lt;#Code#&gt;;
+    }
+    return self;
+}
+
+- (NSString *)source
+{
+    return [NSString stringWithFormat:@"%@.%@", self.getModule, self.getMethod];
+}
+
+#pragma mark - Public
+
+- (&lt;#JceQM__Rsp#&gt; *)commonRsp
+{
+    return SAFE_CAST(self.ret, &lt;#JceQM__Rsp#&gt;);
+}
+
+#pragma mark - Override
+
+- (QMASIPriorityType)priorityType
+{
+    return QMASIPriorityTypeDefault;
+}
+
+- (void)parseJCERspData:(NSData *)data
+{
+    [super parseJCERspData:data];
+
+    if (!self.isSuccessfulReturnCode)
+    {
+        JCELog(@"接口调用失败---%@", self.ret);
+        return;
+    }
+
+    if (!self.commonRsp)
+    {
+        JCELog(@"没有返回数据或解析结构错误---%@", self.ret);
+        return;
+    }
+
+    &lt;#JceQM__Rsp#&gt; *rep = self.commonRsp;
+    &lt;#Code#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E7656F8C-B0D3-41EE-BA65-4960240D61CB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JCE File</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
