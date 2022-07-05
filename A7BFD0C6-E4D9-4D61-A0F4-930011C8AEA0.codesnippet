@@ -13,7 +13,7 @@
 [btn setBackgroundColor:&lt;#(UIColor * _Nullable)#&gt;];
 [btn setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
 btn.accessibilityTraits &amp;= ~UIAccessibilityTraitSelected;
-btn.accessibilityValue = @"&lt;#按钮作用#&gt;";
+btn.accessibilityLabel = @"&lt;#按钮作用#&gt;";
 [btn addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:UIControlEventTouchUpInside];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A7BFD0C6-E4D9-4D61-A0F4-930011C8AEA0</string>
