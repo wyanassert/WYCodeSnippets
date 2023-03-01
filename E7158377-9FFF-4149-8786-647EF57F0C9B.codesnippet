@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pc</string>
+	<string>propc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#BolckType#&gt; &lt;#BolckName#&gt;Bolck;</string>
+	<string>@property (nonatomic, copy) &lt;#BolckType#&gt; &lt;#BolckName#&gt;Block;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E7158377-9FFF-4149-8786-647EF57F0C9B</string>
 	<key>IDECodeSnippetLanguage</key>
