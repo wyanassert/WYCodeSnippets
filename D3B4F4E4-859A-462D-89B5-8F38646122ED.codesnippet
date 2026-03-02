@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>strong</string>
+	<string>button_reverse</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>QM_STRONG_SELF(self);
-if (self)
-{
-    &lt;#code#&gt;
-}</string>
+	<string>btn.transform = CGAffineTransformMakeScale(-1, 1);
+btn.titleLabel.transform = CGAffineTransformMakeScale(-1, 1);
+btn.imageView.transform = CGAffineTransformMakeScale(-1, 1);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BB202C71-AD27-449A-B667-E71B453E2FCF</string>
+	<string>D3B4F4E4-859A-462D-89B5-8F38646122ED</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>strong self</string>
+	<string>button_reverse</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

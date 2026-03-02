@@ -12,7 +12,7 @@
 	<string>UILabel *lb = [UILabel new];
 lb.text = &lt;#text#&gt;;
 lb.textColor = &lt;#(UIColor * _Nullable)#&gt;;
-lb.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+lb.font = [ComHelper regularSystemFontOfSize:&lt;#(CGFloat)#&gt;];
 lb.backgroundColor = [UIColor clearColor];
 [&lt;#self#&gt; addSubview:lb];
 &lt;#self.lb#&gt; = lb;</string>
